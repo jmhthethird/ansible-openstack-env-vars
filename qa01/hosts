@@ -1,0 +1,11 @@
+# This file is managed by Ansible. This file was last updated by Ansible on 2017-08-20 12:19:58
+
+[local]
+127.0.0.1   ansible_connection=local ansible_python_interpreter=python
+
+[vms]
+127.0.0.1   ansible_connection=local ansible_python_interpreter=python
+
+[vault:children]
+local
+vms
